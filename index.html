@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>VOTGC</title>
+    <link rel="shortcut icon" type="image/icon" href="img/VOTGC-LOGO.png"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h2 class="m-0 text-primary">
+                <img src="img/VOTGC-LOGO.png" alt="Logo" class="me-3" style="width: 2em; height: 2em; object-fit: contain;">VOTGC
+            </h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="programs.html" class="nav-item nav-link">Programs</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu fade-down m-0">
+                        <a href="team.html" class="dropdown-item">Our Team</a>
+                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        <a href="survey.html" class="dropdown-item">Survey</a>
+                        <a href="Get Involved.html" class="dropdown-item">Get Involed Page</a>
+                        <a href="founder.html" class="dropdown-item">About The Founder</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="Get Involved.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Get Involved<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5">
+        <div class="owl-carousel header-carousel position-relative">
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-1.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8">
+                                <h1 class="display-3 text-white animated slideInDown">VOICE OF THE GIRL CHILD INITIATIVE</h1>
+                                <p class="fs-5 text-white mb-4 pb-2">Transforming young girls through voices</p>
+                                <a href="about.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
+                                <a href="contact.html" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Reach Out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-2.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-sm-10 col-lg-8">
+                                <h1 class="display-3 text-white animated slideInDown">TRANSFORMING YOUNG GIRLS THROUGH VOICES</h1>
+                                <p class="fs-5 text-white mb-4 pb-2">Voice Of The Girl Child Initiative</p>
+                                <a href="about.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a>
+                                <a href="contact.html" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Reach Out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- Privacy & Terms (Initially hidden)-->
+     <div id="legalBox" style="
+     display: none;
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: 90%;
+     max-width: 600px;
+     background-color: white;
+     color: #333;
+     padding: 30px;
+     border: 1px solid #ccc;
+     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+     border-radius: 0px;
+     z-index: 9999;
+     font-size: 15px;
+     text-align: left;
+     max-height: 90vh;
+     overflow-y: auto;
+     ">
+     <h2 style="text-align: center;">Privacy Policy & Terms of Service</h2>
+
+     <p><strong>Privacy Policy:</strong> We respect your privacy. Any information you provide on this website will only be used to improve your experience and deliver requested services. We do not share your personal data with third parties without your consent, unless required by law.</p>
+
+     <p style="font-weight: 0.5em;">By submitting forms or interacting with this website, you agree that we may collect minimal data such as your name, email, or feedback. This information is stored securely and used only for its intended purpose.</p>
+
+     <p><strong>Terms of Service:</strong> By accessing this website, you agree to abide by all applicable laws and regulations. You are responsible for ensuring that your use of the site does not violate any legal or ethical standards.</p>
+
+     <p>Content on this site is provided for informational purposes only. We reserve the right to change or remove content at any time without prior notice. Continued use of this website constitutes agreement with these terms.</p>
+
+     <p style="margin-top: 15px; font-size: 0.85em; color: #777;">Last updated: December 6th, 2025</p>
+
+    <div style="text-align: center; margin-top: 20px;">
+    <button onclick="acceptLegalNotice()" style="
+     background-color: #28a745;
+     color: white;
+     padding: 10px 20px;
+     border: none;
+     border-radius: 0px;
+     font-weight: bold;
+     cursor: pointer;
+     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    ">
+     ACCEPT
+     </button>
+     </div>
+     </div>
+
+     <!-- JavaScript: Show after 10 seconds -->
+     <script>
+     setTimeout(function () {
+     document.getElementById("legalBox").style.display = "block";
+     }, 5000); // 5 seconds (5,000 ms)
+
+     function acceptLegalNotice() {
+     document.getElementById("legalBox").style.display = "none";
+     }
+     </script>
+    <!-- Privacy & Term END--> 
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-bullseye text-primary mb-4"></i>
+                            <h5 class="mb-3">OUR MISSION STATEMENT</h5>
+                            <p style="text-align: left;">To empower young girls by amplifying their voces and fostering Leadership skills that enable them to become confident and competent leaders of tomorrow through education, mentorship programs and community engagement ensuring they become active agents of change in their lives and the community.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-eye text-primary mb-4"></i>
+                            <h5 class="mb-3">VISION</h5>
+                            <p style="text-align: left;">A world where every girl is heard, valued and empowered to pursue her dreams without barriers, we envision a society that celebrates the unique voices of girls, promote gender equality and creates opportunities for them to thrive, ultimately transforming communities and shaping a brighter future for all.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-comment-dots text-primary mb-4"></i>
+                            <h5 class="mb-3">EXCLUSIVE SUMMARY</h5>
+                            <p style="text-align: left;">VOTGC is a non-profit initiative that aims at empowering young girls by amplifying their voices and contribute collective ideas from them and create an impact and pave them ways of being in a free environment of exercising their leadership skills so they become agents of change in their lives and the society. We envision a world where their voices are heard and valued, and create a society where their achievements are celebrated.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute w-100 h-100" src="img/about.png" alt="" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
+                    <h1 class="mb-4">Welcome to VOTGC</h1>
+                    <p class="mb-4">Voice Of The Girl Child is a non-profit initiative that aims at empowering young girls by amplifying their voices and contribute collective ideas from them and create an impact and pave them ways of being in a free environment of exercising their leadership skills so they can be agents of change in their lives and we envision a world where their voices are heard and valued and create a society where their achievements are celebrated.</p>
+                    <a class="btn btn-primary py-3 px-5 mt-2" href="about.html">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Categories Start -->
+    <div class="container-xxl py-5 category">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Programs</h6>
+                <h1 class="mb-5">Programs & Initiatives</h1>
+            </div>
+            <div class="row g-3">
+                <div class="col-lg-7 col-md-6">
+                    <div class="row g-3">
+                        <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+                            <a class="position-relative d-block overflow-hidden" href="">
+                                <img class="img-fluid" src="img/carousel-2.jpg" alt="">
+                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
+                                    <h5 class="m-0">Mentorship Programs</h5>
+                                    <small class="text-primary"></small>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
+                            <a class="position-relative d-block overflow-hidden" href="">
+                                <img class="img-fluid" src="img/carousel-1.jpg" alt="">
+                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
+                                    <h5 class="m-0">Conferences</h5>
+                                    <small class="text-primary"></small>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
+                            <a class="position-relative d-block overflow-hidden" href="">
+                                <img class="img-fluid" src="img/IMG_7095.JPG" alt="">
+                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
+                                    <h5 class="m-0">Sessions</h5>
+                                    <small class="text-primary"></small>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
+                    <a class="position-relative d-block h-100 overflow-hidden" href="">
+                        <img class="img-fluid position-absolute w-100 h-100" src="img/picnic.jpeg" alt="" style="object-fit: cover;">
+                        <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin:  1px;">
+                            <h5 class="m-0">Picnics</h5>
+                            <small class="text-primary"></small>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Categories Start -->
+
+
+    <!-- Events Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Eventss</h6>
+                <h1 class="mb-5">Popular Events</h1>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/IMG_3009.JPG" alt="">
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                <a href="https://youtube.com/shorts/eSip3ePaDUc?si=EBUc7HXVXBQSgqqE" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 30px 30px 30px;">Watch Video</a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0">
+                            <div class="mb-3">
+                                <small>FIRST EDITION</small>
+                            </div>
+                            <h5 class="mb-4">Empowerment & Leadership Conference</h5>
+                        </div>
+                        <div class="d-flex border-top">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i> Imperial Plaza</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar text-primary me-2"></i>14TH NOVEMBER, 2025</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-clock text-primary me-2"></i>12:00 PM</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/picnic2.jpeg" alt="">
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                <a href="https://youtube.com/shorts/eSip3ePaDUc?si=EBUc7HXVXBQSgqqE" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 30px 30px 30px;">Watch Video</a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0">
+                            <div class="mb-3">
+                                <small>FIRST EDITION</small>
+                            </div>
+                            <h5 class="mb-4">VOTGC Picnic</h5>
+                        </div>
+                        <div class="d-flex border-top">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Juba</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar text-primary me-2"></i>16TH NOVEMBER, 2025</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-clock text-primary me-2"></i>2:00 PM</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Events End -->
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">ExecutiveS</h6>
+                <h1 class="mb-5">Executive Team</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/Priscilla.png" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                                <a class="btn btn-sm-square btn-primary mx-1" href="https://www.facebook.com/share/1BuJddfT99/?mibextid=wwXIfr"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href="https://www.instagram.com/priscilla.ayuen?igsh=MWtvNHB4YWo1bjRkYg=="><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Priscilla Ayuen</h5>
+                            <small>President</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/Kiir Achuei.JPG" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                                <a class="btn btn-sm-square btn-primary mx-1" href="https://www.facebook.com/profile.php?id=100073169532341"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href="https://www.instagram.com/zaddy_sparta?igsh=NXM0Z2ViNGw5azBm"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Kiir Philip</h5>
+                            <small>Vice President</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/Naomi.png" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                                <a class="btn btn-sm-square btn-primary mx-1" href="https://www.facebook.com/share/1A4F7NfrNp/?mibextid=wwXIfr"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href="https://www.instagram.com/naomimalang?igsh=ZXR0N3doNjl4cHpk"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Naomi Malang Samuel</h5>
+                            <small>Secretary General</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/Esther.png" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                                <a class="btn btn-sm-square btn-primary mx-1" href="https://www.facebook.com/share/17jtnK77EV/?mibextid=wwXIfr"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Esther Ayak</h5>
+                            <small>Program Director</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/Dinizio.png" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Dinizio Zangaze</h5>
+                            <small>Deputy Program Director</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/Angeth Ker.png" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                                <a class="btn btn-sm-square btn-primary mx-1" href="https://www.facebook.com/share/1NL4fcjTCR/?mibextid=wwXIfr"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Angeth Ker Deng</h5>
+                            <small>Communictaion Director</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/Arok Matur.png" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                                <a class="btn btn-sm-square btn-primary mx-1" href="https://www.facebook.com/share/1Jdok2xrMc/?mibextid=wwXIfr"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href="https://www.instagram.com/arok_poetry?igsh=MXE1ejJ2NjJqNW45Yg=="><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Arok Matur</h5>
+                            <small>Deputy Communication Director</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/Garang.png" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                                <a class="btn btn-sm-square btn-primary mx-1" href="https://www.facebook.com/garangakoldenk"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href="https://www.instagram.com/garang_akol_deng?igsh=MWxwNnhoYTd1OW5pdA=="><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Garang Akol Deng</h5>
+                            <small>Coordinating Director</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/Thiong.png" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                                <a class="btn btn-sm-square btn-primary mx-1" href="https://www.facebook.com/gochthiong"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href="https://www.instagram.com/genesisthiong?igsh=MWMyZWc2MnJlYm0xYQ=="><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Genesis Goch Thiong</h5>
+                            <small>Deputy Coordinating Director</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/Alek.png" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                                <a class="btn btn-sm-square btn-primary mx-1" href="https://www.facebook.com/share/1aBGJ3pPVE/?mibextid=wwXIfr"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href="https://www.facebook.com/share/1aBGJ3pPVE/?mibextid=wwXIfr"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Alek Mayen Riak</h5>
+                            <small>Advocacy Director</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/Agau.png" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                                <a class="btn btn-sm-square btn-primary mx-1" href="https://www.facebook.com/share/1MXSSbdXXR/?mibextid=wwXIfr"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href="https://www.instagram.com/loyalty_emmaa?igsh=ams3dTMxeGppNTFi"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Agau Deborah Makuol</h5>
+                            <small>Deputy Advocacy Director</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item bg-light">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/Cisse.png" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" style="margin-top: -23px;">
+                            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+                                <a class="btn btn-sm-square btn-primary mx-1" href="https://www.facebook.com/andrew.cisse.58"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-sm-square btn-primary mx-1" href="https://www.instagram.com/thon.cisse?igsh=N3lxMzJob2JrM3Iy"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Thon Cisse</h5>
+                            <small>Technical Director</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="section-title bg-white text-center text-primary px-3">Testimonial</h6>
+                <h1 class="mb-5">TESTIMONIALS</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel position-relative">
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-text bg-light text-center p-2">
+                       <video class="testimonial-video" width="100%" height="220" controls preload="none" style="border-radius:10px;">
+                          <source src="videos/testimonial1-1.mp4" type="video/mp4">
+                       </video>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-text bg-light text-center p-2">
+                       <video class="testimonial-video" width="100%" height="220" controls preload="none" style="border-radius:10px;">
+                          <source src="videos/testimonial1-2.mp4" type="video/mp4">
+                       </video>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-text bg-light text-center p-2">
+                       <video class="testimonial-video" width="100%" height="220" controls preload="none" style="border-radius:10px;">
+                          <source src="videos/testimonial2.mp4" type="video/mp4">
+                       </video>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <div class="testimonial-text bg-light text-center p-2">
+                       <video class="testimonial-video" width="100%" height="220" controls preload="none" style="border-radius:10px;">
+                          <source src="videos/testimonial2.mp4" type="video/mp4">
+                       </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+        
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Quick Links</h4>
+                    <a class="btn btn-link" href="index.html">Home</a>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="programs.html">Programs</a>
+                    <a class="btn btn-link" href="testimonial.html">Testimonials</a>
+                    <a class="btn btn-link" href="contact.html">Contact</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Contact</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Juba, South Sudan</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+211 980 094 498</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>voice.of.thegirlchil@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/share/1ARA19uFGY/?mibextid=wwXIfr"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://youtube.com/@voiceofthegirlchild?si=wSmrrrWJpuFniPBE"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Gallery</h4>
+                    <div class="row g-2 pt-2">
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/IMG_7085.JPG" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/IMG_7135.JPG" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/IMG_7051.JPG" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/IMG_7060.JPG" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/IMG_7087.JPG" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/IMG_7095.JPG" alt="">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">VOTGC</a>, All Right Reserved.
+
+                    
+                        <p>Developed By <a class="border-bottom" href="https://www.facebook.com/mangere29">Alier Mangere</a></p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="index.html">Home</a>
+                            <a href="contact.html">Contact</a>
+                            <a href="survey.html">Survey</a>
+                            <a href="Get Involved.html">Get Involved</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const videos = document.querySelectorAll(".testimonial-video");
+
+    let isPlaying = false;
+
+    videos.forEach(video => {
+
+        // When video starts playing
+        video.addEventListener("play", () => {
+            isPlaying = true;
+
+            // Pause all other videos
+            videos.forEach(v => {
+                if (v !== video) {
+                    v.pause();
+                    v.currentTime = 0;
+                }
+            });
+
+            // Disable swipe (for most sliders)
+            if (window.$ && $(".testimonial-carousel").length) {
+                $(".testimonial-carousel").trigger("stop.owl.autoplay");
+                $(".testimonial-carousel").data("owl.carousel").settings.mouseDrag = false;
+                $(".testimonial-carousel").data("owl.carousel").settings.touchDrag = false;
+            }
+        });
+
+        // When video is paused or ended
+        video.addEventListener("pause", enableSwipe);
+        video.addEventListener("ended", enableSwipe);
+
+        function enableSwipe() {
+            isPlaying = false;
+
+            if (window.$ && $(".testimonial-carousel").length) {
+                $(".testimonial-carousel").data("owl.carousel").settings.mouseDrag = true;
+                $(".testimonial-carousel").data("owl.carousel").settings.touchDrag = true;
+            }
+        }
+    });
+});
+</script>
+
+</body>
+
+</html>

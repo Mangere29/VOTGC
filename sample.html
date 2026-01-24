@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  </div>
+    <div class="container-xxl py-5">
+        <div class="frmtx">
+  <form id="votgcForm" action="https://form.taxi/s/AbC123Xy" method="POST" enctype="multipart/form-data">
+    <fieldset>
+      <legend>VOTGC APPLICATION</legend>
+      <label for="job">Application for *</label>
+      <select name="Application for" id="job" required>
+          <option>VOTGC Membership</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <legend>Personal data</legend>
+      <div>
+        <div>
+          <label for="vn">First name *</label>
+          <input type="text" name="First name" id="vn" required>
+        </div>
+        <div>
+          <label for="nn">Second name *</label>
+          <input type="text" name="Family name" id="nn" required>
+        </div>
+      </div>
+      <div>
+        <div>
+          <label for="sb">Citizenship *</label>
+          <input type="text" name="Citizenship" id="sb">
+        </div>
+        <div>
+          <label for="gd">Date of birth *</label>
+          <input type="date" name="Date of birth" id="gd">
+        </div>
+      </div>
+      <label for="ad">Address</label>
+      <input type="text" name="Address" id="ad">
+      <div>
+        <div>
+          <label for="ort">City</label>
+          <input type="text" name="City" id="ort">
+        </div>
+      </div>
+      <div>
+        <div>
+          <label for="tel">Phone *</label>
+          <input type="tel" name="Phone" id="tel" required>
+        </div>
+        <div>
+          <label for="mail">Email address *</label>
+          <input type="email" name="Email address" id="mail" required>
+        </div>
+      </div>
+      <label>Gender *</label>
+<select name="Gender" required>
+  <option value="">Choose</option>
+  <option>Male</option>
+  <option>Female</option>
+</select>
+     
+<label>Level of education *</label>
+<select name="Level of education" required>
+  <option value="">Choose</option>
+  <option>Primary</option>
+  <option>Secondary</option>
+  <option>University</option>
+  <option>Other</option>
+</select>
+
+    </fieldset>
+    <fieldset>
+      <legend>Application documents</legend>
+      <input type="hidden" name="MAX_FILE_SIZE" value="10485760">
+      <div>
+        <div>
+          <label for="bs">Application letter</label>
+          <input type="file" name="Application letter" id="bs" accept=".pdf,.doc,.docx,.jpg,.jpeg">
+        </div>
+        <div>
+          <label for="ll">Curriculum vitae</label>
+          <input type="file" name="Curriculum vitae" id="ll" accept=".pdf,.doc,.docx,.jpg,.jpeg">
+        </div>
+      </div>
+      <p>Possible file types: DOC, PDF, JPG. Maximum file size: 10 MB.</p>
+    </fieldset>
+    <fieldset>
+      <label><input type="checkbox" name="Data processing confirmed" id="agree" value="Yes" required> I agree to the processing of my entries.</label>
+      <input type="text" name="_gotcha" value="">
+      <button type="submit">Submit application</button>
+    </fieldset>
+  </form>
+</div>
+<style>
+.frmtx {
+  --font-size: 100%;
+  --font-family: inherit;
+  --font-color: inherit;
+  --background-color: #FFF;
+  --border-color: #AAA;
+  --border-width: 1px;
+  --border-radius: 5px;
+container:form/inline-size}
+.frmtx * {color:var(--font-color);font-family:var(--font-family);font-size:var(--font-size);margin:0;padding:0;appearance:auto;outline:none;box-sizing:border-box}
+.frmtx form {margin:1rem;min-width:240px;}
+.frmtx fieldset {margin-top:1.5em;border:0}
+.frmtx fieldset:first-child {margin:0}
+.frmtx legend {font-weight:bold;font-size:1.1em}
+.frmtx label {margin:0;padding:1em 0 .3em;display:block;line-height:1.3}
+.frmtx > label:first-child {padding-top:0}
+.frmtx label:not([for]) {cursor:pointer}
+.frmtx label.h {padding-bottom:0;margin-bottom:-.3em}
+.frmtx fieldset:last-child label {padding:0}
+.frmtx input, .frmtx select, .frmtx button {border:var(--border-width) solid var(--border-color);border-radius:var(--border-radius);background-color:var(--background-color)}
+.frmtx input, .frmtx select {width:100%;padding:.5em;line-height:1.3;background-image:none}
+.frmtx input[name="_gotcha"] {display:none}
+.frmtx input[type="checkbox"] {display:inline;width:1.1em;height:1.1em;appearance:auto;margin-right:.2em;vertical-align: text-bottom}
+.frmtx p {margin:.75em 0}
+.frmtx button {display:block;padding:.5em 1.5em;margin:1.5em 0 0;line-height:1.5;font-weight:bold;cursor:pointer}
+@container form (width > 480px) {.frmtx fieldset > div {display:flex;align-items:flex-end;gap: 0 1.5em} .frmtx fieldset > div > div {flex:1} }
+</style>
+    </div>
+
+    <!-- jsPDF -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<script>
+const form = document.getElementById("votgcForm");
+
+form.addEventListener("submit", async function(e){
+  e.preventDefault();
+
+  // ===== FILE VALIDATION =====
+  const files = [bs.files[0], ll.files[0]];
+  const allowed = ["pdf","doc","docx","jpg","jpeg"];
+
+  for(let f of files){
+    if(!f) continue;
+    const ext = f.name.split('.').pop().toLowerCase();
+    if(!allowed.includes(ext)){
+      alert("Only PDF, DOC, DOCX, JPG, JPEG files allowed.");
+      return;
+    }
+    if(f.size > 10 * 1024 * 1024){
+      alert("Each file must be less than 10MB.");
+      return;
+    }
+  }
+
+  // ===== CREATE PDF =====
+  const { jsPDF } = window.jspdf;
+  const pdf = new jsPDF();
+
+  // ===== LOGO =====
+  const logoUrl = "img/logo.png"; // 🔴 change to your real logo path
+
+  const img = await loadImage(logoUrl);
+  pdf.addImage(img, "PNG", 10, 10, 30, 30);
+
+  // ===== TITLE =====
+  pdf.setFontSize(16);
+  pdf.text("VOTGC INITIATIVE", 105, 20, {align:"center"});
+
+  pdf.setFontSize(12);
+  pdf.text("VOTGC Membership Application", 105, 28, {align:"center"});
+
+  // ===== FORM DATA =====
+  const data = new FormData(form);
+  let y = 50;
+
+  pdf.setFontSize(11);
+  for (const [key, value] of data.entries()) {
+    if(key !== "_gotcha" && typeof value === "string"){
+      pdf.text(`${key}: ${value}`, 15, y);
+      y += 8;
+      if(y > 270){
+        pdf.addPage();
+        y = 20;
+      }
+    }
+  }
+
+  // ===== SIGNATURE AREA =====
+  y += 10;
+  pdf.text("Signature: ____________________________", 15, y);
+  y += 10;
+  pdf.text("Date: ________________________________", 15, y);
+
+  // ===== CONVERT PDF TO FILE =====
+  const pdfBlob = pdf.output("blob");
+  const pdfFile = new File([pdfBlob], "VOTGC_Application.pdf", {type:"application/pdf"});
+
+  // ===== APPEND PDF TO FORM =====
+  const sendData = new FormData(form);
+  sendData.append("Generated Application PDF", pdfFile);
+
+  // ===== SEND TO FORM.TAXI =====
+  fetch(form.action, {
+    method: "POST",
+    body: sendData
+  }).then(res=>{
+    if(res.ok){
+      alert("Application submitted successfully!");
+      form.reset();
+    }else{
+      alert("Submission failed. Try again.");
+    }
+  }).catch(()=>{
+    alert("Network error. Try again.");
+  });
+
+});
+
+// ===== IMAGE LOADER =====
+function loadImage(url){
+  return new Promise((resolve,reject)=>{
+    const img = new Image();
+    img.crossOrigin="anonymous";
+    img.onload=()=>resolve(img);
+    img.onerror=reject;
+    img.src=url;
+  });
+}
+</script>
+
+</body>
+</html>
